@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container p-0">
+      <div
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="swiper mySwiper2"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide body_slider">
+            <h2>Heading 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+              illo voluptatibus porro laborum, eos dolores autem facere ullam
+              mollitia quas.
+            </p>
+            <a href="#" class="btn btn-dark">Read More</a>
+          </div>
+          <div class="swiper-slide body_slider">
+            <h2>Heading 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+              illo voluptatibus porro laborum, eos dolores autem facere ullam
+              mollitia quas.
+            </p>
+            <a href="#" class="btn btn-dark">Read More</a>
+          </div>
+          <div class="swiper-slide body_slider">
+            <h2>Heading 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+              illo voluptatibus porro laborum, eos dolores autem facere ullam
+              mollitia quas.
+            </p>
+            <a href="#" class="btn btn-dark">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider_img">
+        <div thumbsSlider="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper_slider_child">
+                <img src="assets/img/Home_carouselimg1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_slider_child">
+                <img src="assets/img/Home_carouselimg2.png" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_slider_child">
+                <img src="assets/img/Home_carouselimg1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">Next</div>
+        <div class="swiper-button-prev">Previous</div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize  -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        // loop: true,
+        spaceBetween: 0,
+        slidesPerView: 3,
+        freeMode: true,
+        // watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+  </body>
+</html>
